@@ -1,0 +1,20 @@
+<div class="row">
+<% @rooms.each do |room| %> 
+<div class="col s12 m4 l3">
+  <div class="card yellow lighten-1">
+    <div class="card-image">
+      <%= image_tag("aplique-de-parede-dj-corte-laser.jpg") %>
+    </div>
+    <div class="card-content ">
+      <%= fa_icon 'ellipsis-v', class: 'right black-text' %>
+    	<h5><%= room.name %></h5>
+      <p><%= room.description %></p>
+    </div>
+    <div class="card-action">
+      <%= link_to 'Enter', room, class: 'btn blue lighten-2 black-text waves-light' %>
+      <%= link_to 'Subscribe', room, class: 'btn blue lighten-2 black-text waves-light right' %>
+    </div>
+  </div>
+</div>
+<% end %>
+</div>

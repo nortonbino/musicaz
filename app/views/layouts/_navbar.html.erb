@@ -1,0 +1,29 @@
+<nav>
+
+  <% if !current_user %>
+    <div class="nav-wrapper yellow darken-1">
+      <%= link_to root_path do %>
+        <%= fa_icon 'html5', class: 'fa-lg' %>
+      <% end %>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><%= link_to "Home", root_path %></li>
+        <li><%= link_to "Login", new_user_session_path %></li>
+      </ul>
+    </div>
+
+  <% else %>
+
+    <div class="nav-wrapper yellow darken-1">
+      <%= link_to root_path do %>
+        <%= fa_icon 'html5', class: 'fa-lg' %>
+      <% end %>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><%= link_to "Home", root_path %></li>
+        <li><%= link_to "My Rooms", root_path %></li>
+        <li><%= link_to "Logout", destroy_user_session_path %></li>
+      </ul>
+    </div>
+  <%end%>
+</nav>
+    
+

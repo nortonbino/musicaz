@@ -13,4 +13,10 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
-//= require_tree .
+//= require materialize
+//= require navbar
+
+
+  $(document).ready(function(){
+    $('.slider').slider();
+  });
