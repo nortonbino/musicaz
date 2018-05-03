@@ -16,9 +16,7 @@ gem 'simple_form'
 gem 'materialize-sass', '~> 1.0.0.beta'
 gem 'rails-i18n', '~> 5.0.0' # For 5.x
 gem "font-awesome-rails"
-gem "refile", require: "refile/rails"
-gem "refile-mini_magick"
-
+gem 'carrierwave', '~> 1.0'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
